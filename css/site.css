@@ -1,0 +1,105 @@
+/* CHANGES TO BOOTSTRAP NAVBAR */
+
+/* change the background color */
+.navbar-ucf {
+    background-color: #000000;
+    
+}
+/* change the brand and text color */
+.navbar-ucf .navbar-brand,
+.navbar-ucf .navbar-text {
+    color: #ffc904;
+    font-size: 1.125em;
+}
+/* change the link color */
+.navbar-ucf .navbar-nav .nav-link {
+    color: #ffc904;
+    font-size: 1.125em;
+}
+
+/*Change the color of dropdown menus */
+.navbar-ucf .dropdown .dropdown-menu {
+    background-color: #000000;
+    color: #ffc904;
+    font-size: 1.125em;
+}
+
+/* change the color of active or hovered links */
+.navbar-ucf .nav-item.active .nav-link,
+.navbar-ucf .nav-item:focus .nav-link,
+.navbar-ucf .nav-item:hover .nav-link,
+.navbar-ucf .dropdown-item:active .navlink,
+.navbar-ucf .dropdown-item:focus .navlink,
+.navbar-ucf .dropdown-item:hover .navlink {
+    background-color: #ffc904;
+    color: #000000;
+    font-size: 1.125em;
+}
+
+/* make it so that hovering over the header bar drops the submenus
+instead of cicking */
+.dropdown-menu {
+    margin-top: 0;
+} 
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+  
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+    background-color: black;
+}
+
+/* CUSTOM THEME USING UCF COLORS ON BUTTONS */
+
+.ucf-colors, .btn-ucf, button.ucf-colors {
+    background-color: #000000;
+    color: #ffc904;
+}
+
+.ucf-colors-selected, button.ucf-colors-selected {
+    background-color: #ffc904;
+    color: #000000;
+}
+
+button.ucf-colors:hover, button.btn-ucf:hover {
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-box-shadow:inset 0px 0px 0px 2px black;
+    -moz-box-shadow:inset 0px 0px 0px 2px black;
+    box-shadow:inset 0px 0px 0px 2px black;
+}
+
+.pagination > li > a
+{
+    background-color: black !important;
+    color: gold !important;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    background-color: white !important;
+    color: black !important;
+}
+
+.pagination > .active > a
+{
+    color:black !important;
+    background-color: gold !important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: white !important;
+    color: black !important;
+}
+
+#topMenu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
